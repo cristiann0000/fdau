@@ -1,0 +1,39 @@
+/*###########################################################################
+# BOXES
+#############################################################################*/
+
+.box {
+}
+
+// PERSON BOX
+.person-box {
+  box-shadow: 0 3px 14px 0 rgba(155, 155, 155, 0.5);
+  background-color: #ffffff;
+  border-radius: 4.2px;
+  padding: 15px 10px;
+  width: 120px;
+
+  @media(min-width: $breakpoint-medium) {
+    width: 130px;
+  }
+
+  img {
+    margin-bottom: 12px;
+    max-width: 100%;
+  }
+
+  h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 0.8125rem;
+    text-align: center;
+  }
+
+  &.small {
+    padding: 10px;
+    width: 115px;
+
+    h2 {
+      font-size: 0.75rem;
+    }
+  }
+}

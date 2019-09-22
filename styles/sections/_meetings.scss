@@ -1,0 +1,304 @@
+/*###########################################################################
+# Meetings
+#############################################################################*/
+
+section#slider_meetings {
+  background-image: url('../images/olas.png');
+  background-color: #f9f9f9;
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  background-size: 100% 570px;
+  background-repeat: no-repeat;
+  background-position: 0px 160px;
+
+  h1 {
+    margin-bottom: 80px;
+  }
+
+  .show-3-9 {
+    text-align: right;
+    font-size: 18px;
+    color: #4a4a4a;
+    margin-bottom: 16px;
+    margin-top: -36px;
+
+    span {
+      color: #064fe2;
+    }
+  }
+
+  /* the slides */
+  .slick-slide {
+    margin: 0 10px;
+  }
+  /* the parent */
+  .slick-list {
+    margin: 0 -10px;
+  }
+
+  .slide-box {
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 414px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &.green .text {
+      background-color: #00968f;
+    }
+
+    &.green2 .text {
+      background-color: #78be20;
+    }
+
+    &.red .text {
+      background-color: #6f1132;
+    }
+
+    .text {
+      height: 99px;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      padding: 13px 16px;
+      z-index: 2;
+
+      p {
+        color: white;
+      }
+    }
+
+    &.clicked {
+      position: relative;
+
+      &:before {
+        content: "";
+        border-radius: 4px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      &.green:before {
+        background-color: rgba(0, 150, 143, 0.4);
+      }
+
+      &.green2:before {
+        background-color: rgba(120, 190, 32, 0.8);
+      }
+
+      &.red:before {
+        background-color: rgba(111, 17, 50, 0.8);
+      }
+    }
+
+  }
+
+  .hide-box {
+    display: none;
+
+    .wrapper {
+      display: grid;
+      grid-gap: 18px;
+
+      @media(min-width: $breakpoint-medium) {
+        grid-template-columns: 340px 1fr;
+      }
+    }
+  }
+
+
+  .detail-slide-box {
+    @extend .slide-box;
+    margin: 0;
+
+    @media(max-width: $breakpoint-medium) {
+      display: none;
+    }
+
+    &.slide1_detail-image {
+      background-image: url('../images//encuentros/1.jpeg');
+    }
+
+    &.slide2_detail-image {
+      background-image: url('../images//encuentros/2.jpeg');
+    }
+
+    &.slide3_detail-image {
+      background-image: url('../images//encuentros/3.jpeg');
+    }
+
+    &.slide4_detail-image {
+      background-image: url('../images//encuentros/4.jpeg');
+    }
+
+    &.slide5_detail-image {
+      background-image: url('../images//encuentros/5.jpeg');
+    }
+
+    &.slide6_detail-image {
+      background-image: url('../images//encuentros/6.jpeg');
+    }
+
+    &.slide7_detail-image {
+      background-image: url('../images//encuentros/7.jpeg');
+    }
+  }
+
+
+  #slides {
+    margin: 0 50px 50px;
+
+    @media(min-width: $breakpoint-medium) {
+      margin: 0 0 50px 0;
+    }
+
+    .slick-arrow {
+      width: 50px;
+      height: 50px;
+      box-shadow: 0 2px 5px 4px #ededed;
+      background-color: #ffffff;
+      border-radius: 100%;
+      z-index: 999;
+
+      &:before {
+        content: none;
+      }
+
+      &.slick-next {
+        background-image: url("../images/flecha_r.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        right: -65px;
+        z-index: 99999;
+
+      }
+
+      &.slick-prev {
+        background-image: url("../images/flecha_l.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        left: -60px;
+      }
+
+      &.slick-disabled {
+        display: none !important;
+      }
+    }
+  }
+
+  .details-box {
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+
+    p {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1rem;
+      font-weight: normal;
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+
+    &.green {
+      border: solid 1px #00968f;
+    }
+
+    &.red {
+      border: solid 1px #6f1132;
+    }
+
+    &.green2 {
+      border: solid 1px #78be20;
+    }
+
+    .grid-block {
+      grid-gap: 40px;
+    }
+
+    .close {
+      width: 15px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+    }
+
+    .continue {
+      display: block !important;
+      text-align: right;
+      margin-top: 25px;
+      color: #064fe2;
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+
+      img {
+        width: 55px;
+      }
+    }
+
+    .to-back {
+      img {
+        transform: rotate(180deg);
+      }
+    }
+
+    .slick-disabled {
+      display: none !important;
+    }
+  }
+
+  .slick-slide {
+    outline: none;
+  }
+
+
+  .slide-box1 {
+    background-image: url('../images//encuentros/1.jpeg');
+  }
+
+  .slide-box2 {
+    background-image: url('../images//encuentros/2.jpeg');
+  }
+
+  .slide-box3 {
+    background-image: url('../images//encuentros/3.jpeg');
+  }
+
+  .slide-box4 {
+    background-image: url('../images//encuentros/4.jpeg');
+  }
+
+  .slide-box5 {
+    background-image: url('../images//encuentros/5.jpeg');
+  }
+
+  .slide-box6 {
+    background-image: url('../images//encuentros/6.jpeg');
+  }
+
+  .slide-box7 {
+    background-image: url('../images//encuentros/7.jpeg');
+  }
+
+  .slide-box8 {
+    background-image: url('../images//encuentros/8.jpeg');
+  }
+
+  .slide-box9 {
+    background-image: url('../images//encuentros/9.jpeg');
+  }
+}

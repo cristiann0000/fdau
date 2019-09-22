@@ -1,0 +1,142 @@
+/*###########################################################################
+# TOP 5
+#############################################################################*/
+
+section#top_5 {
+  background-color: #f9f9f9;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+
+  .stars {
+    position: absolute;
+    width: 80px;
+    top: -100px;
+    left: 0;
+
+    @media(min-width: $breakpoint-medium) {
+      width: 201px;
+      top: -230px;
+    }
+  }
+
+  h2 {
+    font-size: 40px;
+    margin-bottom: 117px; 
+  }
+
+  .grid-block {
+    grid-gap: 20px;
+  }
+
+
+  .box {
+    border-radius: 6px;
+    padding: 7px;
+    position: relative;
+
+    span {
+      font-size: 80px;
+      font-weight: bold;
+      color: #fff;
+      line-height: 1;
+      z-index: 1;
+    }
+
+    img {
+      position: absolute;
+      width: 50%;
+
+      @media(max-width: $breakpoint-large) {
+        left: 25%;
+        right: 25%;
+      }
+
+      @media(min-width: $breakpoint-large) {
+        width: 90%;
+        left: 10px;
+      }
+    }
+
+    p {
+      font-weight: bold;
+      font-size: 1rem;
+      min-height: 63px;
+      color: #000;
+      margin-bottom: 0;
+      z-index: 1;
+      text-align: center;
+
+      @media(min-width: $breakpoint-large) {
+        text-align: left;
+      }
+    }
+
+    &.one {
+      background-color: #00968f;      
+      margin-bottom: 50px;
+      display: flex;
+      min-height: 204px;
+
+      span {
+        font-size: 145px;
+        line-height: 1;
+        padding-bottom: 6 0px;
+      }
+
+      p {
+        font-size: 1.5625rem;
+        width: 226px;
+        margin-top: 35px;
+        margin-left: 11px;
+        color: #fff;
+      }
+    }
+
+    &.small {
+      min-height: 271px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &.two {
+      background-color: #f1c400;
+
+      img {
+        top: 0;
+      }
+    }
+
+    &.three {
+      background-color: #8ed0fb;
+
+      @media(min-width: $breakpoint-large) {
+        p {
+          width: 156px;
+        }
+      }
+    }
+
+    &.four {
+      background-color: #f1c400;
+
+      @media(min-width: $breakpoint-large) {
+        p {
+          width: 159px;
+        }
+      }
+    }
+
+    &.five {
+      background-color: #8ed0fb;
+
+      @media(min-width: $breakpoint-large) {
+        p {
+          width: 140px;
+        }
+      }
+    }
+
+  }
+}

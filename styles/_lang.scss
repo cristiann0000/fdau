@@ -1,0 +1,50 @@
+body {
+  &.esp {
+    .logo-eng {
+      display: none; 
+    }
+
+    .logo-esp {
+      display: block; 
+    }
+
+    .esp {
+      display: initial;
+    }
+
+    .eng,
+    .por {
+      display: none;
+    }
+  }
+
+
+  &.eng {
+    .logo-eng {
+      display: block; 
+    }
+
+    .logo-esp {
+      display: none; 
+    }
+
+    .eng {
+      display: initial;
+    }
+
+    .esp,
+    .por {
+      display: none;
+    }
+  }
+
+  &.por {
+    .logo-eng {
+      display: none; 
+    }
+
+    .logo-esp {
+      display: block; 
+    }
+ } 
+}

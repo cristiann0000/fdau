@@ -1,0 +1,178 @@
+/*###########################################################################
+# PROGRAMS
+#############################################################################*/
+
+section#programs {
+  background-size: 100%;
+
+  background-color: #f0eeee;
+  position: relative;
+  
+  h1 {
+    padding: 0 0 30px;
+
+    @media(min-width: $breakpoint-medium) {
+      margin-bottom: 90px;
+    }
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  h2 {
+    margin-bottom: 34px;
+    font-size: 1.25rem;
+
+    @media(min-width: $breakpoint-medium) {
+      font-size: 1.875rem;
+    }
+  }
+
+  .show-on-mobile {
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 25px;
+    line-height: 1.33;
+    font-weight: normal;
+
+    @media(max-width: $breakpoint-medium) {
+      text-align: justify;
+    }
+  }
+
+  .grid-block + .grid-block {
+    margin-top: 53px;
+  }
+
+  .mujeres-y-territorio {
+    @media(min-width: $breakpoint-large) {
+      padding-right: 110px;
+    }
+  }
+
+  div.activismo {
+    @media(min-width: $breakpoint-large) {
+      padding-left: 100px;
+    }
+  }
+
+  img {
+    @media(min-width: $breakpoint-large) {
+      max-width: 491px;
+    }
+
+    &.activismo {
+      @media(min-width: $breakpoint-large) {
+        margin-left: 55px;
+        max-width: 342px;
+      }
+    }
+
+    &.show-on-mobile-only {
+      max-width: 250px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    } 
+  }
+
+  button {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+
+    @media(min-width: $breakpoint-medium) {
+      width: auto;
+      margin: 0;
+    }
+
+    &.hide {
+      display: none;
+    }
+  }
+
+  #see_more_program1_wrapper,
+  #see_more_program2_wrapper {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+
+    &.open  {
+      visibility: visible;
+      height: auto;
+      opacity: 1;
+      min-height: 427px;
+      padding: 42px 70px 20px 57px;
+    }
+  }
+
+  .see-more {
+    position: relative;
+    border-radius: 10px;
+    border: solid 1px #415dfd;
+    background-color: #ffffff;
+
+    p {
+      font-size: 1rem;
+    }
+
+    span.program-text {
+      position: absolute;
+      color: #d3d3d3;
+      transform: rotate(-90deg);
+      font-size: 0.875rem;
+      left: -80px;
+      bottom: 140px;
+    }
+
+    .close {
+      cursor: pointer;
+      width: 16px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .grid-block {
+      grid-gap: 60px;
+    }
+  }
+
+  .continue {
+    display: block !important;
+    text-align: right;
+    margin-top: 40px;
+    color: #064fe2;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .to-back {
+    img {
+      transform: rotate(180deg);
+    }
+  }
+
+  .slick-disabled {
+    display: none !important;
+  }
+
+  .slick-slide {
+    outline: none;
+  }
+
+  .cangrejos {
+    position: absolute;
+    bottom: -420px;
+    left: 0;
+    width: 110px;
+    z-index: 1;
+  }
+}

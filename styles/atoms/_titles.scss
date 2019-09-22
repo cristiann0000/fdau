@@ -1,0 +1,23 @@
+/*###########################################################################
+# TITLES
+#############################################################################*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', sans-serif;
+  margin: 0 0 10px 0;
+  color: $normal-black;
+}
+
+h1 {
+  font-size: 1.875rem;
+
+  @media(min-width: $breakpoint-medium) {
+    font-size: 3.4375rem;
+  }
+}
+

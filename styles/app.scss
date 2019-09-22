@@ -1,0 +1,44 @@
+
+// DEPENDENCIES
+@import "dependencies/normalize.css";
+
+// VARIABLES
+@import "variables/breakpoints";
+@import "variables/colors";
+@import "variables/fonts";
+
+// BASE
+@import "base";
+
+// HELPERS
+@import "helpers/mixins";
+@import "helpers/responsive";
+@import "helpers/alignments";
+
+// LAYOUT
+@import "layout/grid";
+@import "layout/navbar";
+@import "layout/footer";
+@import "layout/wrapper";
+
+// ATOMS
+@import "atoms/boxes";
+@import "atoms/links";
+@import "atoms/titles";
+@import "atoms/buttons";
+@import "atoms/paragraph";
+@import "atoms/progress_bar";
+
+// SECTIONS
+@import "sections/hero";
+@import "sections/introduction";
+@import "sections/programs";
+@import "sections/results";
+@import "sections/what_support";
+@import "sections/top_5";
+@import "sections/meetings";
+@import "sections/thanks";
+
+@import "slick";
+@import "slick-theme";
+@import "lang";

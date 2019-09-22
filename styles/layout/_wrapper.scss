@@ -1,0 +1,20 @@
+/*###########################################################################
+# WRAPPER
+#############################################################################*/
+
+// Section Wrapper
+section.wrapper {
+  padding: 0 30px;
+
+  @media(min-width: $breakpoint-medium) {
+    padding: 0 50px;
+  }
+
+  @media(min-width: $breakpoint-large) {
+    padding: 0 50px;
+  }
+
+  @media(min-width: $breakpoint-xlarge) {
+    padding: 0 203px;
+  }
+}
