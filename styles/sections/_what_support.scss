@@ -84,12 +84,12 @@ section#what_support {
 
         p {
           font-family: 'Raleway', sans-serif;
-          font-size: 1rem !important;
+          font-size: 15px !important;
           font-weight: normal;
           line-height: 1.5;
         }
 
-        span {
+        span.link {
           font-weight: bold;
           font-size: 1.125rem;
           cursor: pointer;
@@ -159,7 +159,7 @@ section#what_support {
           top: 0;
         }
 
-        span {
+        span.link {
           color: $primary-normal-blue;
         }
       }
@@ -309,7 +309,7 @@ section#what_support {
     p.usd {
       margin-bottom: 20px;
       font-weight: bold;
-      font-size: 55px;
+      font-size: 45px;
       color: #2778fd;
 
       @media(min-width: $breakpoint-medium) {
@@ -335,16 +335,17 @@ section#what_support {
       text-align: center;
       position: relative;
 
-      margin-right: 16px;
 
       &:last-of-type {
         margin-right: 0;
       }
 
       @media(max-width: $breakpoint-medium) {
+        margin-bottom: 20px;
       }
 
       @media(min-width: $breakpoint-medium) {
+        margin-right: 16px;
       }
 
       p {
@@ -446,6 +447,12 @@ section#what_support {
 
       &.yellow {
         color: #f1c400;
+        margin-bottom: 20px;
+
+        @media(min-width: $breakpoint-medium) {
+          margin-bottom: 0px;
+        }
+
 
         &:before {
           background-color: #f1c400;

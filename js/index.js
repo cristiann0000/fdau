@@ -59,14 +59,20 @@ $( document ).ready(function() {
     slidesToShow: 1,
   });
 
+  setTimeout(function(){
+    $('#program1_slider').slick("refresh");
+  }, 3000);
+
 
   $('#program2_slider').slick({
     infinite: false,
     prevArrow: $('#prev_p2'),
     nextArrow: $('#next_p2'),
-    slidesToShow: 1,
   });
 
+  setTimeout(function(){
+    $('#program2_slider').slick("refresh");
+  }, 3000);
 
   //History 1
 	$( ".see-story" ).click(function() {
@@ -97,8 +103,8 @@ $( document ).ready(function() {
   		
   		$( "#clicked_images" ).removeClass( "first-active" );
 
-  		let data = $( this ).parent().parent();
-  		data.css("width","auto");
+  		let dato = $( this ).parent().parent();
+  		dato.css("width","auto");
 	})
 
   $('#history_slider').slick({
@@ -138,8 +144,8 @@ $( document ).ready(function() {
       
       $( "#clicked_images" ).removeClass( "second-active" );
 
-      let data = $( this ).parent().parent();
-      data.css("width","auto");
+      let dato = $( this ).parent().parent();
+      dato.css("width","auto");
   })
 
   $('#history2_slider').slick({
@@ -178,8 +184,8 @@ $( document ).ready(function() {
       
       $( "#clicked_images" ).removeClass( "third-active" );
 
-      let data = $( this ).parent().parent();
-      data.css("width","auto");
+      let dato = $( this ).parent().parent();
+      dato.css("width","auto");
   })
 
   $('#history3_slider').slick({
@@ -242,6 +248,7 @@ $( document ).ready(function() {
   });
 
 
+  $("#top-menu").hide();
 
   // Scroll
   // Cache selectors
@@ -269,6 +276,8 @@ $( document ).ready(function() {
 
   // Bind to scroll
   $(window).scroll(function(){
+    $("#top-menu").show();
+
      // Get container scroll position
      var fromTop = $(this).scrollTop()+topMenuHeight;
      console.log()

@@ -35,7 +35,7 @@ section#top_5 {
     padding: 7px;
     position: relative;
 
-    span {
+    span.number {
       font-size: 80px;
       font-weight: bold;
       color: #fff;
@@ -78,7 +78,7 @@ section#top_5 {
       display: flex;
       min-height: 204px;
 
-      span {
+      span.number {
         font-size: 145px;
         line-height: 1;
         padding-bottom: 6 0px;
@@ -90,6 +90,22 @@ section#top_5 {
         margin-top: 35px;
         margin-left: 11px;
         color: #fff;
+      }
+
+      img {
+        position: absolute;
+        width: 100%;
+
+        @media(max-width: $breakpoint-large) {
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+
+        @media(min-width: $breakpoint-large) {
+          width: 90%;
+          left: 10px;
+        }
       }
     }
 

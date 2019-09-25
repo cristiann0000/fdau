@@ -42,3 +42,13 @@
 @import "slick";
 @import "slick-theme";
 @import "lang";
+
+
+.arrows {
+	display: flex;
+	justify-content: flex-end;
+
+	.to-back  + .continue {
+		margin-left: 20px;
+	}
+}

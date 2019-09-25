@@ -108,6 +108,13 @@ section#programs {
       opacity: 1;
       min-height: 427px;
       padding: 42px 70px 20px 57px;
+      margin-top: 20px;
+    }
+  }
+
+  .grid-block {
+    @media(max-width: $breakpoint-medium) {
+      display: block;
     }
   }
 
@@ -175,4 +182,10 @@ section#programs {
     width: 110px;
     z-index: 1;
   }
+
+    @media(max-width: $breakpoint-medium) {
+      .cangrejos {
+        display: none !important;
+      }
+    }
 }

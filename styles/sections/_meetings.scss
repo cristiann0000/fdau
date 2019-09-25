@@ -23,7 +23,7 @@ section#slider_meetings {
     margin-bottom: 16px;
     margin-top: -36px;
 
-    span {
+    span.number {
       color: #064fe2;
     }
   }
@@ -31,6 +31,12 @@ section#slider_meetings {
   /* the slides */
   .slick-slide {
     margin: 0 10px;
+
+    .grid-block {
+      @media(max-width: $breakpoint-medium) {
+        display: block;
+      }
+    }
   }
   /* the parent */
   .slick-list {
@@ -87,7 +93,7 @@ section#slider_meetings {
       }
 
       &.green:before {
-        background-color: rgba(0, 150, 143, 0.4);
+        background-color: rgba(0, 150, 143, 0.8);
       }
 
       &.green2:before {
@@ -124,7 +130,7 @@ section#slider_meetings {
     }
 
     &.slide1_detail-image {
-      background-image: url('../images//encuentros/1.jpeg');
+      background-image: url('../images//encuentros/1.jpg');
     }
 
     &.slide2_detail-image {
@@ -144,11 +150,11 @@ section#slider_meetings {
     }
 
     &.slide6_detail-image {
-      background-image: url('../images//encuentros/6.jpeg');
+      background-image: url('../images//encuentros/6.png');
     }
 
     &.slide7_detail-image {
-      background-image: url('../images//encuentros/7.jpeg');
+      background-image: url('../images//encuentros/7.jpg');
     }
   }
 
@@ -267,7 +273,7 @@ section#slider_meetings {
 
 
   .slide-box1 {
-    background-image: url('../images//encuentros/1.jpeg');
+    background-image: url('../images//encuentros/1.jpg');
   }
 
   .slide-box2 {
@@ -287,11 +293,11 @@ section#slider_meetings {
   }
 
   .slide-box6 {
-    background-image: url('../images//encuentros/6.jpeg');
+    background-image: url('../images//encuentros/6.png');
   }
 
   .slide-box7 {
-    background-image: url('../images//encuentros/7.jpeg');
+    background-image: url('../images//encuentros/7.jpg');
   }
 
   .slide-box8 {

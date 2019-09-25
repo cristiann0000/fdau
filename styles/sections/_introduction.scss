@@ -229,7 +229,7 @@ section#introduction {
 
       div.first {
         @media(min-width: $breakpoint-large) {
-          padding-right: 60px;
+          padding-right: 50px;
         }
       }
 
@@ -275,7 +275,7 @@ section#introduction {
       opacity: 1;
 
       @media(min-width: $breakpoint-medium) {
-        padding: 170px 49px 47px 36px;
+        padding: 170px 39px 47px 36px;
       }
     }
   }
