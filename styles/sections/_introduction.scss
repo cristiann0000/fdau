@@ -12,6 +12,21 @@ section#introduction {
 
   padding-bottom: 20px;
 
+  .item-6 {
+    @media(min-width: $breakpoint-large) {
+      display: inline-block;
+      width: 50%
+    }
+  }
+
+  .item-6-small {
+    @media(min-width: $breakpoint-large) {
+      display: inline-block;
+      vertical-align: top;
+      width: 49%
+    }
+  }
+
   &.collapse-open {
     padding-bottom: 200px;
   }
@@ -220,7 +235,8 @@ section#introduction {
       p.text {
         font-family: 'Raleway', sans-serif;
         position: relative;
-        margin: 0; 
+        margin: 0;
+        text-align: justify;
 
         @media(max-width: $breakpoint-medium) {
           text-align: justify;

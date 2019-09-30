@@ -12,6 +12,18 @@ section#slider_meetings {
   background-repeat: no-repeat;
   background-position: 0px 160px;
 
+  background-image: url('../images/bg_2_curve.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 110%;
+
+  padding-top: 288px;
+  padding-bottom: 50px;
+
+  @media(max-width: $breakpoint-medium) {
+    padding-top: 160px;
+  }
+
   h1 {
     margin-bottom: 80px;
   }
@@ -210,6 +222,7 @@ section#slider_meetings {
       font-size: 1rem;
       font-weight: normal;
       line-height: 1.5;
+      text-align: justify;
     }
 
     h3 {

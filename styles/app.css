@@ -1035,6 +1035,19 @@ section#introduction {
   background-size: 100%;
   padding-bottom: 20px;
 }
+@media (min-width: 1025px) {
+  section#introduction .item-6 {
+    display: inline-block;
+    width: 50%;
+  }
+}
+@media (min-width: 1025px) {
+  section#introduction .item-6-small {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+  }
+}
 section#introduction.collapse-open {
   padding-bottom: 200px;
 }
@@ -1224,6 +1237,7 @@ section#introduction .collapse-box .info p.text {
   font-family: "Raleway", sans-serif;
   position: relative;
   margin: 0;
+  text-align: justify;
 }
 @media (max-width: 641px) {
   section#introduction .collapse-box .info p.text {
@@ -1322,6 +1336,7 @@ section#programs p {
   margin-bottom: 25px;
   line-height: 1.33;
   font-weight: normal;
+  text-align: justify;
 }
 @media (max-width: 641px) {
   section#programs p {
@@ -1455,24 +1470,21 @@ section#programs .cangrejos {
 # RESULTS
 #############################################################################*/
 section#results {
-  background-image: url("../images/bg_2_curve.png");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 110%;
   background-color: #f9f9f9;
   position: relative;
-  padding-top: 288px;
+  padding-top: 0px;
   padding-bottom: 180px;
 }
 @media (max-width: 641px) {
   section#results {
-    padding-top: 160px;
+    padding-top: 0px;
     padding-bottom: 100px;
   }
 }
 section#results h1 {
   position: relative;
   z-index: 1;
+  margin-bottom: 150px;
 }
 section#results h2 {
   position: relative;
@@ -1492,7 +1504,7 @@ section#results h3 {
   section#results .results {
     width: calc(100% - 406px);
     position: absolute;
-    top: 488px;
+    top: 0px;
   }
 }
 section#results .hide {
@@ -1528,6 +1540,22 @@ section#results p {
     font-size: 1rem;
   }
 }
+section#results p.abc {
+  color: #6d6d6d;
+  font-size: 18px;
+  padding-left: 20px;
+  position: relative;
+}
+section#results p.abc:before {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  content: "";
+  height: 6px;
+  width: 6px;
+  background-color: #064fe2;
+  border-radius: 50%;
+}
 section#results .datos {
   margin-bottom: 30px;
   position: relative;
@@ -1539,7 +1567,7 @@ section#results .datos {
 }
 @media (min-width: 641px) {
   section#results .datos {
-    width: 534px;
+    width: 560px;
   }
 }
 section#results .datos.full {
@@ -1834,6 +1862,7 @@ section#what_support .images .box .data p {
   font-size: 15px !important;
   font-weight: normal;
   line-height: 1.5;
+  text-align: justify;
 }
 section#financies .images .box .data span.link,
 section#what_support .images .box .data span.link {
@@ -2302,7 +2331,7 @@ section#financies {
 }
 section#financies .detail-text {
   padding: 19px 0 33px;
-  max-width: 680px;
+  max-width: 740px;
 }
 section#financies .detail-text li {
   display: flex;
@@ -2319,10 +2348,10 @@ section#financies .detail-text li p {
 section#financies .detail-text li p.title {
   font-size: 18px;
   font-weight: bold;
-  min-width: 130px;
+  min-width: 145px;
 }
 section#financies .detail-text li p.detail {
-  font-size: 11px;
+  font-size: 13px;
   color: #63666a;
 }
 section#financies .detail-text li.fundaciones p.title {
@@ -2331,11 +2360,17 @@ section#financies .detail-text li.fundaciones p.title {
 section#financies .detail-text li.fundaciones p.detail {
   max-width: 460px;
 }
+section#financies .detail-text li.fundaciones p.detail a:hover {
+  color: #2778fd;
+}
 section#financies .detail-text li.gobiernos p.title {
   color: #6f1132;
 }
 section#financies .detail-text li.gobiernos p.detail {
   max-width: 202px;
+}
+section#financies .detail-text li.gobiernos p.detail a:hover {
+  color: #2778fd;
 }
 section#financies .detail-text li + li {
   margin-top: 13px;
@@ -2393,7 +2428,7 @@ section#top_5 .box img {
 }
 @media (min-width: 1025px) {
   section#top_5 .box img {
-    width: 90%;
+    width: 220px;
     left: 10px;
   }
 }
@@ -2494,8 +2529,19 @@ section#slider_meetings {
   background-size: 100% 570px;
   background-repeat: no-repeat;
   background-position: 0px 160px;
+  background-image: url("../images/bg_2_curve.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 110%;
+  padding-top: 288px;
+  padding-bottom: 50px;
   /* the slides */
   /* the parent */
+}
+@media (max-width: 641px) {
+  section#slider_meetings {
+    padding-top: 160px;
+  }
 }
 section#slider_meetings h1 {
   margin-bottom: 80px;
@@ -2659,6 +2705,7 @@ section#slider_meetings .details-box p {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
+  text-align: justify;
 }
 section#slider_meetings .details-box h3 {
   font-size: 20px;
@@ -2772,6 +2819,13 @@ section#thanks p {
     max-width: 429px;
     margin: 0 auto;
   }
+}
+section#thanks p a {
+  font-size: 18px;
+  font-weight: normal;
+}
+section#thanks p a:hover {
+  color: #2778fd;
 }
 section#thanks p + p {
   margin-top: 30px;

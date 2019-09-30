@@ -38,6 +38,15 @@ section#thanks {
     	max-width: 429px;
     	margin: 0 auto;
     }
+
+    a {
+      font-size: 18px;
+      font-weight: normal;
+
+        &:hover {
+            color: #2778fd;
+        }
+    }
   }
 
   p + p {

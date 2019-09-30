@@ -3,24 +3,21 @@
 #############################################################################*/
 
 section#results {
-  background-image: url('../images/bg_2_curve.png');
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 110%;
 
   background-color: #f9f9f9;
   position: relative;
-  padding-top: 288px;
+  padding-top: 0px;
   padding-bottom: 180px;
 
   @media(max-width: $breakpoint-medium) {
-    padding-top: 160px;
+    padding-top: 0px;
     padding-bottom: 100px;
   }
 
   h1 {
     position: relative;
     z-index: 1;
+    margin-bottom: 150px;
   }
 
   h2 {
@@ -43,7 +40,7 @@ section#results {
     .results {
       width: calc(100% - 406px);
       position: absolute;
-      top: 488px;
+      top: 0px;
     }
   }
 
@@ -83,6 +80,24 @@ section#results {
       font-size: 1rem;
     }
 
+    &.abc {
+      color: #6d6d6d;
+      font-size: 18px;
+      padding-left: 20px;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 6px;
+        content: "";
+        height: 6px;
+        width: 6px;
+        background-color: #064fe2;
+        border-radius: 50%;
+      }
+    }
+
   }
 
   .datos {
@@ -90,7 +105,7 @@ section#results {
     position: relative;
 
     @media(min-width: $breakpoint-medium) {
-      width: 534px;
+      width: 560px;
     }
 
     &.full {

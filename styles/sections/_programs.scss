@@ -39,6 +39,7 @@ section#programs {
     margin-bottom: 25px;
     line-height: 1.33;
     font-weight: normal;
+    text-align: justify;
 
     @media(max-width: $breakpoint-medium) {
       text-align: justify;

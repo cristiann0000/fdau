@@ -6,6 +6,10 @@ $( document ).ready(function() {
   	$( "#see_more_preview" ).addClass( "open" );
 
     $("#introduction").addClass("collapse-open");
+
+    setTimeout(function(){
+      $('#introduction_slider').slick("refresh");
+    }, 100);
 	});
 
   $( "#close_see_more_detail" ).click(function() {
@@ -22,9 +26,6 @@ $( document ).ready(function() {
     slidesToShow: 1,
   });
 
-  setTimeout(function(){
-    $('#introduction_slider').slick("refresh");
-  }, 3000);
 
 
   // Programs
@@ -32,6 +33,10 @@ $( document ).ready(function() {
     $( "#see_more_program1_wrapper").addClass( "open" );
     $(this).addClass("hide");
     $( "#no_see_more_program1" ).removeClass( "hide" );
+
+    setTimeout(function(){
+      $('#program1_slider').slick("refresh");
+    }, 100);
   });
 
   $( "#no_see_more_program1" ).click(function() {
@@ -44,6 +49,10 @@ $( document ).ready(function() {
     $( "#see_more_program2_wrapper").addClass( "open" );
     $(this).addClass("hide");
     $( "#no_see_more_program2" ).removeClass( "hide" );
+
+    setTimeout(function(){
+      $('#program2_slider').slick("refresh");
+    }, 100);
   });
 
   $( "#no_see_more_program2" ).click(function() {
@@ -59,10 +68,6 @@ $( document ).ready(function() {
     slidesToShow: 1,
   });
 
-  setTimeout(function(){
-    $('#program1_slider').slick("refresh");
-  }, 3000);
-
 
   $('#program2_slider').slick({
     infinite: false,
@@ -70,9 +75,6 @@ $( document ).ready(function() {
     nextArrow: $('#next_p2'),
   });
 
-  setTimeout(function(){
-    $('#program2_slider').slick("refresh");
-  }, 3000);
 
   //History 1
 	$( ".see-story" ).click(function() {

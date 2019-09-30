@@ -87,6 +87,7 @@ section#what_support {
           font-size: 15px !important;
           font-weight: normal;
           line-height: 1.5;
+          text-align: justify;
         }
 
         span.link {
@@ -554,7 +555,7 @@ section#financies {
 
   .detail-text {
     padding: 19px 0 33px;
-    max-width: 680px;
+    max-width: 740px;
 
     li {
       display: flex;
@@ -573,11 +574,11 @@ section#financies {
       p.title {
         font-size: 18px;
         font-weight: bold;
-        min-width: 130px;
+        min-width: 145px;
       }
 
       p.detail {
-        font-size: 11px;
+        font-size: 13px;
         color: #63666a;
       }
 
@@ -588,6 +589,10 @@ section#financies {
 
         p.detail {
           max-width: 460px;
+
+          a:hover {
+            color: #2778fd;
+          }
         }
       }
 
@@ -598,6 +603,10 @@ section#financies {
 
         p.detail {
           max-width: 202px;
+
+          a:hover {
+            color: #2778fd;
+          }
         }
       }
     }
@@ -607,5 +616,3 @@ section#financies {
     }
   }
 }
-
-
