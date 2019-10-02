@@ -179,8 +179,8 @@ section#what_support {
         border-radius: 9px;
       }
 
-       &.third-box .image-wrapper > div {
-        background-image: url('../images/apoyo_3.jpeg');
+      &.third-box .image-wrapper > div {
+        background-image: url('../images/apoyo_3.jpg');
         background-size: cover;
         background-position: 50%;
         border-radius: 9px;
@@ -237,6 +237,13 @@ section#what_support {
             display: grid;
           }
         }
+
+        &.third-box .image-wrapper > div {
+          background-image: url('../images/apoyo_3.jpg');
+          background-size: cover;
+          background-position: 100%;
+        }
+
       }
     }
 

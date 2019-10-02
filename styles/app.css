@@ -1315,6 +1315,20 @@ section#programs h1 {
     margin-bottom: 90px;
   }
 }
+@media (min-width: 1025px) {
+  section#programs .item-6 {
+    display: inline-block;
+    width: 50%;
+  }
+}
+@media (min-width: 1025px) {
+  section#programs .item-6-small {
+    padding-left: 30px;
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+  }
+}
 section#programs h3 {
   font-size: 1.25rem;
   font-weight: 500;
@@ -1953,7 +1967,7 @@ section#what_support .images .box.second-box .image-wrapper > div {
 }
 section#financies .images .box.third-box .image-wrapper > div,
 section#what_support .images .box.third-box .image-wrapper > div {
-  background-image: url("../images/apoyo_3.jpeg");
+  background-image: url("../images/apoyo_3.jpg");
   background-size: cover;
   background-position: 50%;
   border-radius: 9px;
@@ -2007,6 +2021,12 @@ section#what_support .images .box.active.second-box .data,
 section#what_support .images .box.active.third-box .data {
   grid-template-columns: 390px 1fr;
   display: grid;
+}
+section#financies .images .box.active.third-box .image-wrapper > div,
+section#what_support .images .box.active.third-box .image-wrapper > div {
+  background-image: url("../images/apoyo_3.jpg");
+  background-size: cover;
+  background-position: 100%;
 }
 section#financies .images.first-active,
 section#what_support .images.first-active {
@@ -2655,7 +2675,7 @@ section#slider_meetings .detail-slide-box.slide5_detail-image {
   background-image: url("../images//encuentros/5.jpeg");
 }
 section#slider_meetings .detail-slide-box.slide6_detail-image {
-  background-image: url("../images//encuentros/6.png");
+  background-image: url("../images//encuentros/6.jpg");
 }
 section#slider_meetings .detail-slide-box.slide7_detail-image {
   background-image: url("../images//encuentros/7.jpg");
@@ -2768,7 +2788,7 @@ section#slider_meetings .slide-box5 {
   background-image: url("../images//encuentros/5.jpeg");
 }
 section#slider_meetings .slide-box6 {
-  background-image: url("../images//encuentros/6.png");
+  background-image: url("../images//encuentros/6.jpg");
 }
 section#slider_meetings .slide-box7 {
   background-image: url("../images//encuentros/7.jpg");

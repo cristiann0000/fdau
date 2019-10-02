@@ -16,6 +16,22 @@ section#programs {
     }
   }
 
+  .item-6 {
+    @media(min-width: $breakpoint-large) {
+      display: inline-block;
+      width: 50%
+    }
+  }
+
+  .item-6-small {
+    @media(min-width: $breakpoint-large) {
+      padding-left: 30px;
+      display: inline-block;
+      vertical-align: top;
+      width: 49%
+    }
+  }
+
   h3 {
     font-size: 1.25rem;
     font-weight: 500;
