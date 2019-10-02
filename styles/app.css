@@ -1315,6 +1315,9 @@ section#programs h1 {
     margin-bottom: 90px;
   }
 }
+section#programs .programa-uno {
+  margin-bottom: 50px;
+}
 @media (min-width: 1025px) {
   section#programs .item-6 {
     display: inline-block;
