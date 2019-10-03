@@ -1380,8 +1380,7 @@ section#programs .grid-block + .grid-block {
 }
 @media (min-width: 1025px) {
   section#programs img.activismo {
-    margin-left: 55px;
-    max-width: 342px;
+    max-width: 397px;
   }
 }
 section#programs img.show-on-mobile-only {
@@ -2451,8 +2450,8 @@ section#top_5 .box img {
 }
 @media (min-width: 1025px) {
   section#top_5 .box img {
-    width: 220px;
-    left: 10px;
+    width: 210px;
+    left: 12px;
   }
 }
 section#top_5 .box p {
